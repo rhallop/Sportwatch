@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:internal="http://schemas.android.com/apk/prv/res/android"
+    android:id="@+id/status_bar_latest_event_content"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#668cff"
+    android:minHeight="64dp">
+
+    <ImageButton
+        android:id="@+id/buttonOpenActivityNotif"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:background="#3333B5E5"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_home_white_48dp" />
+
+    <ImageButton
+        android:id="@+id/buttonResetTripmeterNotif"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textViewWayPointMetricsNotif"
+        android:layout_toStartOf="@+id/textViewWayPointMetricsNotif"
+        android:background="#3333B5E5"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_delete_white_48dp" />
+
+
+    <ImageButton
+        android:id="@+id/buttonAddWayPointNotif"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#3333B5E5"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_pin_drop_white_48dp" />
+
+    <TextView
+        android:id="@+id/textViewWayPointMetricsNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buttonAddWayPointNotif"
+        android:layout_toStartOf="@+id/buttonAddWayPointNotif"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/textViewTripmeterMetricsNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buttonResetTripmeterNotif"
+        android:layout_toStartOf="@+id/buttonResetTripmeterNotif"
+        android:paddingRight="5dp"
+        android:text="-"
+        android:background="#3333B5E5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textViewTripmeterWayPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textViewTripmeterMetricsNotif"
+        android:layout_toStartOf="@+id/textViewTripmeterMetricsNotif"
+        android:paddingRight="5dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>
